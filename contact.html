@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce website</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Menu Bar Start -->
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/cute-kid-with-abacus-studio.jpg" class="rounded-circle"
+                    style="height: 100px;width: 100px;" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 demo">
+                    <li class="nav-item h3">
+                        <a class="nav-link  text-light active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item h3">
+                        <a class="nav-link text-light" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown h3">
+                        <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-primary h3" href="contact.html">Contact</a></li>
+                            <li><a class="dropdown-item text-primary h3" href="#">Services</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-primary h3" href="blog.html">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item h3">
+                        <a class="nav-link text-light">Products</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Menu Bar End -->
+
+    <!-- Contact Us Form Started -->
+    <div class="container my-5">
+        <h3 class="text-center text-primary">You Can Send Us an Email</h3>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput2" class="form-label">Full Name</label>
+            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="--Enter--">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput3" class="form-label">Subject</label>
+            <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="--Enter--">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Email Body</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <!-- Button -->
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button">Email Us</button>
+        </div>
+    </div>
+    <!-- Contact Us Form Ended -->
+
+</body>
+
+</html>

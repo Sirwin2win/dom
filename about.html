@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce website</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Menu Bar Start -->
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/cute-kid-with-abacus-studio.jpg" class="rounded-circle"
+                    style="height: 100px;width: 100px;" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 demo">
+                    <li class="nav-item h3">
+                        <a class="nav-link  text-light active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item h3">
+                        <a class="nav-link text-light" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown h3">
+                        <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-primary h3" href="contact.html">Contact</a></li>
+                            <li><a class="dropdown-item text-primary h3" href="#">Services</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-primary h3" href="blog.html">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item h3">
+                        <a class="nav-link text-light">Products</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Menu Bar End -->
+    <div class="container my-5">
+        <!-- Team Members Started -->
+        <h3 class="text-center text-primary mb-5">Meet Our Team</h3>
+        <div class="row ms-4">
+            <div class="col-sm-4 mb-5">
+                <img src="images/md.avif" style="height: 200px; width: 200px;" class="rounded-circle" />
+                <div class="team">
+                    <h4>Joel Doe</h4>
+                    <p class="inner">MD</p>
+                </div>
+
+            </div>
+            <div class="col-sm-4 mb-5">
+                <img src="images/ceo.avif" style="height: 200px; width: 200px;" class="rounded-circle" />
+                <div class="team">
+                    <h4>Joel Doe</h4>
+                    <p class="inner">MD</p>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-5">
+                <img src="images/techie.avif" style="height: 200px; width: 200px;" class="rounded-circle" />
+                <div class="team">
+                    <h4>Peter Doe</h4>
+                    <p class="inner">Techie</p>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-5">
+                <img src="images/madam.avif" style="height: 200px; width: 200px;" class="rounded-circle" />
+                <div class="team">
+                    <h4>Madam Doe</h4>
+                    <p class="inner">Madam</p>
+                </div>
+            </div>
+            <div class="col-sm-4 mb-5">
+                <img src="images/accountant.avif" style="height: 200px; width: 200px;" class="rounded-circle" />
+                <div class="team1">
+                    <h4>Accountant Doe</h4>
+                    <p class="inner">Accountant</p>
+                </div>
+            </div>
+        </div>
+        <!-- Team Members Ended -->
+
+        <!-- Bootstrap Table Start -->
+        <!-- table-striped table-hover table-dark table-bordered -->
+
+        <h3 class="text-center text-primary my-5">Products Table</h3>
+        <table class="table my-5 table-striped table-bordered table-hover table-dark">
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>IMAGE</th>
+                    <th>QUANTITY</th>
+                    <th>PRICE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mac Laptop</td>
+                    <td><img src="images/laptop1.avif" style="height: 50px; width: 50px;" /></td>
+                    <td>2</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Headset</td>
+                    <td><img src="images/headset1.avif" style="height: 50px; width: 50px;" /></td>
+                    <td>2</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Shoe</td>
+                    <td><img src="images/shoe1.avif" style="height: 50px; width: 50px;" /></td>
+                    <td>2</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bag</td>
+                    <td><img src="images/bag1.avif" style="height: 50px; width: 50px;" /></td>
+                    <td>2</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Mac Laptop</td>
+                    <td><img src="images/laptop3.avif" style="height: 50px; width: 50px;" /></td>
+                    <td>2</td>
+                    <td>$100</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bootstrap Table End -->
+
+</body>
+
+</html>

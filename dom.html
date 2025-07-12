@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript DOM</title>
+</head>
+
+<body id="body">
+    <h1 id="one">This is header One</h1>
+    <img id="img1" src="images/accountant.avif" />
+
+    <h2 class="demo">Header Two</h2>
+    <h3 class="demo">Header Three</h3>
+    <p class="demo">Paragraph</p>
+    <h4>Header Four</h4>
+    <h5 class="h5">Header Five</h5>
+
+    <form onsubmit="handleSubmit()">
+        <pre>
+            <input type="text" id="email" >
+
+            <input type="password" id="password" >
+
+            <input type="date" id="dated" >
+
+            <input type="submit" value="Register" >
+        </pre>
+    </form>
+
+    <input type="text" id="screen" readonly>
+    <div>
+        <button value="0">0</button>
+        <button value="1">1</button>
+        <button value="2">2</button>
+        <button value="3">3</button>
+        <button value="4">4</button>
+        <button value="5">5</button>
+        <button value="6">6</button>
+        <button value="7">7</button>
+        <button value="8">8</button>
+        <button value="9">9</button>
+        <button value="-">-</button>
+        <button value="+">+</button>
+        <button value="/">/</button>
+        <button value="*">*</button>
+        <button value=".">.</button>
+        <button onclick="clearInput()">C</button>
+        <button onclick="res()">=</button>
+    </div>
+    <!-- 
+    /*
+Javascript DOM is Document Object Model. Its a way of javascript accessing all the html
+elements and their properties. Which also gives javascript the ability to make changes 
+to any html element on the DOM.
+Document is the file where we are running our code(about.html)
+Window is the browser part where we view our code.
+The DOM enables Javascript code to return html elements as object. Objects have
+properties and methods
+Some DOM methods:
+1. document.getElementById
+2. document.getElementsByClassName
+3. document.getElementsByTagName
+4. document.querySelector
+5. documen.querySelectorAll
+6. document.createElement
+*/
+    -->
+    <script src="dom.js"></script>
+</body>
+
+</html>
