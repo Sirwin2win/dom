@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Api Fetch</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="demo" onclick="greet()">Hello World</h1>
+
+        <h2>Header Two</h2>
+        <div class="row" id="row">
+
+        </div>
+    </div>
+    </div>
+    <script>
+        let x = document.getElementById('demo')
+        x.style.color = 'red'
+        const greet = function () {
+            alert('Good day Sir')
+        }
+        /*
+Events are actions that are being taken by the user on the website e.g click,mouseover,
+keyup, mousedown etc.
+Event handlers are any javascript function that is callled as a result of an event by the
+user.
+e.g <button onclick='square()'>Click to square</button>
+Event listeners; they accept event handlers as strings . It also allows us to attach more
+than one event handlers to an element
+e.g x.addEventListener('click',greet)
+
+Bootstrap Grid format
+<div class='row'>
+<div class='col-sm-4'>
+    <img src=product.image>
+    <h5>
+        <p>
+    </div>
+
+    </div>
+        */
+        let h2 = document.getElementsByTagName('h2')[0]
+        h2.addEventListener('click', greet)
+        fetch('https://fakestoreapi.com/products')
+            .then((res) => res.json())
+            .then((json) => json.map((product) => {
+                let row = document.getElementById('row')
+                // create a div element
+                let div = document.createElement('div')
+                div.classList.add('col-sm-4')
+                // append div to it's parent row
+                row.appendChild(div)
+                // create img tag
+                let img = document.createElement('img')
+                img.src = product.image
+                img.style.height = '200px'
+                img.style.width = '200px'
+                // append img to it's parent div
+                div.appendChild(img)
+                // create an h5 element
+                let h5 = document.createElement('h5')
+                h5.textContent = product.title
+                //append h5 to it's parent div
+                div.appendChild(h5)
+                // create a p tag
+                let p = document.createElement('p')
+                p.textContent = product.description
+                // append p to it's parent div
+                div.appendChild(p)
+                // create a span element for price 
+                let span = document.createElement('span')
+                span.textContent = `$${product.price}`
+                span.style.marginRight = '50px'
+                // append span to it's parent div
+                div.appendChild(span)
+                // create a br tag
+                let br = document.createElement('br')
+                // append br to div
+                // div.appendChild(br)
+                // Create an italics tag for the rate
+                let i = document.createElement('i')
+                i.textContent = product.rating.rate
+                // append i to div
+                div.appendChild(i)
+
+            }))
+    </script>
+</body>
+
+</html>

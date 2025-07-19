@@ -137,3 +137,40 @@ const r = num.findIndex((v) => {
   return v > 4;
 });
 console.log(r);
+
+const students = [
+  {
+    id: 1,
+    title: "Men's T-shirt",
+    image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+  },
+  {
+    id: 2,
+    title: "School Bag",
+    image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+  },
+  {
+    id: 3,
+    title: "Electronics",
+    image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+  },
+  {
+    id: 4,
+    title: "Laptop",
+    image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+  },
+  {
+    id: 5,
+    title: "Men's T-shirt",
+    image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+  },
+  {
+    id: 6,
+    title: "Men's T-shirt",
+    image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+  },
+];
+
+students.map((product) => {
+  console.log(product.image);
+});
